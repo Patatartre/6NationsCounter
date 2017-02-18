@@ -113,6 +113,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void reset(View view) {
+        numberTryRed = 0;
+        numberTryBlue = 0;
+
+        numberConversionRed = 0;
+        numberConversionBlue = 0;
+
+        numberDropRed = 0;
+        numberDropBlue = 0;
+
+        numberPenaltyRed = 0;
+        numberPenaltyBlue = 0;
+
+        scoreTeamBlue = 0;
+        scoreTeamRed = 0;
+
+    }
+
     /**
      * Displays the given score for Team Blue.
      */

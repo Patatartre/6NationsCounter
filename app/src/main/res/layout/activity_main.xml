@@ -189,5 +189,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Reset" />
+        android:text="Reset"
+        android:onClick="reset"/>
 </RelativeLayout>
