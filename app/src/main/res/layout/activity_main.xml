@@ -5,8 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.a6nationscounter.MainActivity">
 
@@ -16,48 +14,86 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_blue_try"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/team_blue_conversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/team_blue_dropgoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/team_blue_penalty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Team A"/>
+                android:layout_gravity="center"
+                android:text="Team Blue" />
 
             <TextView
+                android:id="@+id/team_blue_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                />
+                android:layout_gravity="center"
+                android:text="0" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Try"
-                android:onClick="addTryToTeamA"
-                />
+                android:layout_gravity="center"
+                android:onClick="addTryToBlue"
+                android:text="Try" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Conversion????"
-                android:onClick="addConversionToTeamA"
-                />
+                android:layout_gravity="center"
+                android:onClick="addConversionToBlue"
+                android:text="Conversion" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Drop-Goal"
-                android:onClick="addDropToTeamA"
-                />
+                android:layout_gravity="center"
+                android:onClick="addDropToBlue"
+                android:text="Drop Goal" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Penalty"
-                android:onClick="addPenaltyToTeamA"
-                />
+                android:layout_gravity="center"
+                android:onClick="addPenaltyToBlue"
+                android:text="Penalty" />
 
 
         </LinearLayout>
@@ -65,48 +101,93 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Team B"/>
+                android:layout_gravity="center"
+                android:text="Team Red" />
 
             <TextView
+                android:id="@+id/team_red_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                />
+                android:layout_gravity="center"
+                android:text="0" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Try"
-                android:onClick="addTryToTeamB"
-                />
+                android:layout_gravity="center"
+                android:onClick="addTryToRed"
+                android:text="Try" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Conversion????"
-                android:onClick="addConversionToTeamB"
-                />
+                android:layout_gravity="center"
+                android:onClick="addConversionToRed"
+                android:text="Conversion" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Drop-Goal"
-                android:onClick="addDropToTeamB"
-                />
+                android:layout_gravity="center"
+                android:onClick="addDropToRed"
+                android:text="Drop-Goal" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Penalty"
-                android:onClick="addPenaltyToTeamB"
-                />
+                android:layout_gravity="center"
+                android:onClick="addPenaltyToRed"
+                android:text="Penalty" />
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_red_try"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/team_red_conversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/team_red_dropgoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/team_red_penalty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0" />
+        </LinearLayout>
+
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Reset" />
 </RelativeLayout>
