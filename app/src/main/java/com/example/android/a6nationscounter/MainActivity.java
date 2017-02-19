@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    int scoreTeamBlue = 0;
+    int scoreTeamRed = 0;
+
     int numberTryRed = 0;
     int numberTryBlue = 0;
 
@@ -19,8 +22,6 @@ public class MainActivity extends AppCompatActivity {
     int numberPenaltyRed = 0;
     int numberPenaltyBlue = 0;
 
-    int scoreTeamBlue = 0;
-    int scoreTeamRed = 0;
 
 
     @Override
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         numberTryRed = numberTryRed + 1;
         scoreTeamRed = scoreTeamRed + 5;
         displayForTeamRedScore(scoreTeamRed);
+        displayForTeamRedTry(numberTryRed);
 
     }
 
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         numberTryBlue = numberTryBlue + 1;
         scoreTeamBlue = scoreTeamBlue + 5;
         displayForTeamBlueScore(scoreTeamBlue);
+        displayForTeamBlueTry(numberTryBlue);
 
     }
 
@@ -59,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         numberConversionRed = numberConversionRed + 1;
         scoreTeamRed = scoreTeamRed + 2;
         displayForTeamRedScore(scoreTeamRed);
+        displayForTeamRedConvertion(numberConversionRed);
 
     }
 
@@ -69,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         numberConversionBlue = numberConversionBlue + 1;
         scoreTeamBlue = scoreTeamBlue + 2;
         displayForTeamBlueScore(scoreTeamBlue);
+        displayForTeamBlueConvertion(numberConversionBlue);
 
     }
 
@@ -79,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         numberDropRed = numberDropRed + 1;
         scoreTeamRed = scoreTeamRed + 3;
         displayForTeamRedScore(scoreTeamRed);
+        displayForTeamRedDrop(numberDropRed);
 
     }
 
@@ -89,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
         numberDropBlue = numberDropBlue + 1;
         scoreTeamBlue = scoreTeamBlue + 3;
         displayForTeamBlueScore(scoreTeamBlue);
+        displayForTeamBlueDrop(numberDropBlue);
 
     }
 
@@ -99,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
         numberPenaltyRed = numberPenaltyRed + 1;
         scoreTeamRed = scoreTeamRed + 3;
         displayForTeamRedScore(scoreTeamRed);
+        displayForTeamRedPenalty(numberPenaltyRed);
 
     }
 
@@ -109,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         numberPenaltyBlue = numberPenaltyBlue + 1;
         scoreTeamBlue = scoreTeamBlue + 3;
         displayForTeamBlueScore(scoreTeamBlue);
+        displayForTeamBluePenalty(numberPenaltyBlue);
 
     }
 
@@ -128,6 +137,22 @@ public class MainActivity extends AppCompatActivity {
 
         scoreTeamBlue = 0;
         scoreTeamRed = 0;
+
+        displayForTeamRedScore(scoreTeamRed);
+        displayForTeamBlueScore(scoreTeamBlue);
+
+        displayForTeamBlueTry(numberTryBlue) ;
+        displayForTeamRedTry(numberTryRed) ;
+
+        displayForTeamBlueConvertion(numberConversionBlue) ;
+        displayForTeamRedConvertion (numberConversionRed) ;
+
+        displayForTeamBlueDrop(numberDropBlue) ;
+        displayForTeamRedDrop(numberDropRed);
+
+        displayForTeamBluePenalty(numberPenaltyBlue);
+        displayForTeamRedPenalty(numberPenaltyRed);
+
 
     }
 
@@ -153,6 +178,62 @@ public class MainActivity extends AppCompatActivity {
     public void displayForTeamBlueTry(int numberTry) {
         TextView scoreView = (TextView) findViewById(R.id.team_blue_try);
         scoreView.setText(String.valueOf(numberTry));
+    }
+
+    /**
+     * Displays the number of try for Team Red.
+     */
+    public void displayForTeamRedTry(int numberTry) {
+        TextView scoreView = (TextView) findViewById(R.id.team_red_try);
+        scoreView.setText(String.valueOf(numberTry));
+    }
+
+    /**
+     * Displays the number of Conversion for Team Blue.
+     */
+    public void displayForTeamBlueConvertion(int numberConversion) {
+        TextView scoreView = (TextView) findViewById(R.id.team_blue_conversion);
+        scoreView.setText(String.valueOf(numberConversion));
+    }
+
+    /**
+     * Displays the number of Conversion for Team Red.
+     */
+    public void displayForTeamRedConvertion(int numberConversion) {
+        TextView scoreView = (TextView) findViewById(R.id.team_red_conversion);
+        scoreView.setText(String.valueOf(numberConversion));
+    }
+
+    /**
+     * Displays the number of Drop for Team Blue.
+     */
+    public void displayForTeamBlueDrop(int numberDrop) {
+        TextView scoreView = (TextView) findViewById(R.id.team_blue_dropgoal);
+        scoreView.setText(String.valueOf(numberDrop));
+    }
+
+    /**
+     * Displays the number of Drop for Team Red.
+     */
+    public void displayForTeamRedDrop(int numberDrop) {
+        TextView scoreView = (TextView) findViewById(R.id.team_red_dropgoal);
+        scoreView.setText(String.valueOf(numberDrop));
+    }
+
+    /**
+     * Displays the number of Penalty for Team Blue.
+     */
+    public void displayForTeamBluePenalty(int numberPenalty) {
+        TextView scoreView = (TextView) findViewById(R.id.team_blue_penalty);
+        scoreView.setText(String.valueOf(numberPenalty));
+    }
+
+    /**
+     * Displays the number of Penalty for Team Red.
+     */
+    public void displayForTeamRedPenalty(int numberPenalty) {
+        TextView scoreView = (TextView) findViewById(R.id.team_red_penalty);
+        scoreView.setText(String.valueOf(numberPenalty));
     }
 
 
