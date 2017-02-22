@@ -8,6 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.a6nationscounter.MainActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -227,5 +228,7 @@
         android:layout_centerHorizontal="true"
         android:onClick="reset"
         android:text="Reset" />
+
+    
 
 </RelativeLayout>
