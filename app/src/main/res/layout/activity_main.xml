@@ -13,11 +13,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:orientation="horizontal">
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -68,7 +76,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 android:orientation="horizontal">
@@ -97,7 +105,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 android:orientation="horizontal">
@@ -124,7 +132,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
@@ -157,10 +165,11 @@
         <LinearLayout
             android:layout_width="1dp"
             android:layout_height="fill_parent"
-            android:background="@android:color/darker_gray"></LinearLayout>
+            android:background="@color/colorPrimary"
+            android:orientation="vertical" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -184,15 +193,18 @@
                 android:textSize="56dp" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
+                android:layout_marginLeft="32dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+
+                    android:layout_marginRight="12dp"
                     android:background="@drawable/roundedbuttonred"
                     android:onClick="addTryToRed"
                     android:text="Try" />
@@ -203,20 +215,25 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="0"
+
                     android:textColor="@android:color/white"
                     android:textSize="24dp" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
+                android:layout_marginLeft="32dp"
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/button2"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+
+                    android:layout_marginRight="12dp"
                     android:background="@drawable/roundedbuttonred"
                     android:onClick="addConversionToRed"
                     android:text="Conversion" />
@@ -233,15 +250,18 @@
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
+                android:layout_marginLeft="32dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+
+                    android:layout_marginRight="12dp"
                     android:background="@drawable/roundedbuttonred"
                     android:onClick="addDropToRed"
                     android:text="Drop-Goal" />
@@ -257,14 +277,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+
+                    android:layout_marginRight="12dp"
                     android:background="@drawable/roundedbuttonred"
                     android:onClick="addPenaltyToRed"
                     android:text="Penalty" />
@@ -291,6 +314,4 @@
         android:layout_centerHorizontal="true"
         android:onClick="reset"
         android:text="Reset" />
-
-
 </RelativeLayout>
