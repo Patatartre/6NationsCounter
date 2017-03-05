@@ -45,6 +45,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"
                 android:text="0"
+                android:fontFamily="cursive"
                 android:textColor="@android:color/white"
                 android:textSize="56dp" />
 
@@ -172,6 +173,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+
             android:orientation="vertical">
 
             <TextView
@@ -188,7 +190,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"
+                android:fontFamily="cursive"
                 android:text="0"
+
                 android:textColor="@android:color/white"
                 android:textSize="56dp" />
 
@@ -196,7 +200,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                android:layout_marginLeft="32dp"
+                android:layout_marginLeft="12dp"
                 android:orientation="horizontal">
 
                 <Button
@@ -204,7 +208,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
 
-                    android:layout_marginRight="12dp"
+                    android:layout_marginRight="24dp"
                     android:background="@drawable/roundedbuttonred"
                     android:onClick="addTryToRed"
                     android:text="Try" />
@@ -215,7 +219,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="0"
-
                     android:textColor="@android:color/white"
                     android:textSize="24dp" />
             </LinearLayout>
@@ -224,7 +227,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                android:layout_marginLeft="32dp"
+                android:layout_marginLeft="12dp"
                 android:orientation="horizontal">
 
                 <Button
@@ -233,7 +236,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
 
-                    android:layout_marginRight="12dp"
+                    android:layout_marginRight="24dp"
                     android:background="@drawable/roundedbuttonred"
                     android:onClick="addConversionToRed"
                     android:text="Conversion" />
@@ -253,7 +256,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                android:layout_marginLeft="32dp"
+                android:layout_marginLeft="12dp"
                 android:orientation="horizontal">
 
                 <Button
@@ -261,7 +264,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
 
-                    android:layout_marginRight="12dp"
+                    android:layout_marginRight="24dp"
                     android:background="@drawable/roundedbuttonred"
                     android:onClick="addDropToRed"
                     android:text="Drop-Goal" />
@@ -279,7 +282,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
+                android:layout_marginLeft="12dp"
                 android:orientation="horizontal">
 
                 <Button
@@ -287,7 +290,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
 
-                    android:layout_marginRight="12dp"
+                    android:layout_marginRight="24dp"
                     android:background="@drawable/roundedbuttonred"
                     android:onClick="addPenaltyToRed"
                     android:text="Penalty" />
